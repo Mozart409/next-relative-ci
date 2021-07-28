@@ -2,33 +2,46 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+This project has been configured to send webpack statistics to [relative-ci](https://relative-ci.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> Warning
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You need to generate your RELATIVE_CI_KEY
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Step 1
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Visit the [Dashboard](https://app.relative-ci.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Step 2
 
-## Learn More
+Click on the left icon "Settings"
 
-To learn more about Next.js, take a look at the following resources:
+#### Step 3
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the tab bar "Keys"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Step 4
 
-## Deploy on Vercel
+Copy the "default" key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Add the Key to your Github Repo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Step 1
+
+Visit the your Repo
+
+#### Step 2
+
+Click on the "Settings" Icon in the secondary tab bar
+
+#### Step 3
+
+Navigate down to "Secrets"
+
+#### Step 4
+
+Add a secret with the name "RELATIVE_CI_KEY" and add your secret
+
+> When you push your chages the next time the Github Action will run and send the statistics to relative ci. You can see your action by pressing the "Action" Icon in the secondary tab bar in your Github repo
+
+Have fun
