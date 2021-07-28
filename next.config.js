@@ -8,7 +8,11 @@ module.exports = {
     const { dev, isServer } = options
 
     if (!dev && !isServer) {
-      config.plugins.push(new RelativeCiAgentWebpackPlugin())
+      config.plugins.push(
+        new RelativeCiAgentWebpackPlugin({
+          stats: { excludeAssets: [/stats.json/] },
+        })
+      )
     }
     config.plugins.push(
       new StatsWriterPlugin({
