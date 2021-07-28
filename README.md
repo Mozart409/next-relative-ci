@@ -24,11 +24,11 @@ In the tab bar "Keys"
 
 Copy the "default" key
 
-## Add the Key to your Github Repo :key:
+## Add the Key to your GitHub Repo :key:
 
 #### Step 1
 
-Visit the your Repo
+Visit your Repo
 
 #### Step 2
 
@@ -42,6 +42,6 @@ Navigate down to "Secrets"
 
 Add a secret with the name "RELATIVE_CI_KEY" and add your secret
 
-> When you push your chages the next time the Github Action will run and send the statistics to relative ci. You can see your action by pressing the "Action" Icon in the secondary tab bar in your Github repo
+> When you push your changes the GitHub Action will run and send the statistics to relative ci. You can see your action by pressing the "Action" Icon in the secondary tab bar in your GitHub repo
 
 Have fun. :rocket:
