@@ -22,6 +22,8 @@ jobs:
         run: yarn install
 
       - run: yarn build
+        env:
+          RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}
 
       - name: Send stats to relative-ci.com
         run: npx relative-ci-agent
